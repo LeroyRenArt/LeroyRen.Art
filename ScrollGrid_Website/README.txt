@@ -1,0 +1,1 @@
+Upload all files to your root directory on your web host. Open index.html in your browser to see the site.
