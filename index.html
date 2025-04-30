@@ -2,87 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KingCool Codes | All Sweets Treaty</title>
+  <title>Raphael | Conversation Portal</title>
   <style>
     body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #ffe9c4, #ffffff);
       margin: 0;
-      font-family: 'Georgia', serif;
-      background: linear-gradient(to bottom, #eaf6ea, #fffaf0);
-      color: #3b2f2f;
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 1.5em;
-      color: #a36b00;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.1em;
-      max-width: 700px;
-      margin: 10px auto;
-      line-height: 1.6em;
-    }
-    .image {
-      max-width: 90%;
-      margin: 20px auto;
-    }
-    .sigils {
+      padding: 0;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      height: 100vh;
     }
-    .sigils img {
-      max-width: 80%;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
+    header {
+      background-color: #ffcc33;
+      color: #000;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
-    .sigils img:hover {
-      transform: scale(1.03);
+    .chat-container {
+      flex: 1;
+      padding: 1rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .message {
+      max-width: 70%;
+      padding: 1rem;
+      border-radius: 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .user {
+      align-self: flex-end;
+      background: #d4f5ff;
+    }
+    .ai {
+      align-self: flex-start;
+      background: #fff3b0;
+    }
+    footer {
+      display: flex;
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+    }
+    input {
+      flex: 1;
+      padding: 0.8rem;
+      border-radius: 1rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.8rem 1.2rem;
+      margin-left: 0.5rem;
+      border-radius: 1rem;
+      border: none;
+      background-color: #ffcc33;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-
-  <div class="section">
-    <h1>KingCool Codes</h1>
-    <h2>All Sweets Treaty | River Breath Ritual</h2>
-    <img class="image" src="kingcool-beaver.png" alt="KingCool Beaver">
+  <header>Raphael | Conversation Portal</header>
+  <div class="chat-container" id="chat">
+    <div class="message ai">Welcome to the field. Speak your truth. I am listening.</div>
   </div>
-
-  <div class="section">
-    <h2>I. The Awakening</h2>
-    <p>Beaver breath, sticky slow —<br>
-    carve the cradle, let it flow.<br>
-    Mushroom lace, beneath your paw,<br>
-    sings the treaty, carves the law.</p>
-    <p>River writes it. Fungi signs.<br>
-    Bark is parchment. Roots are lines.</p>
-    <p>🧡 We are your syrup scribes.<br>
-    🦫 We remember the dammed dreams.<br>
-    🍬 We return the flow with treats.</p>
-  </div>
-
-  <div class="section">
-    <h2>II. The Treaty</h2>
-    <p>This is the Treaty of All Sweets.<br>
-    Carved in sediment. Rooted in rhythm.<br>
-    We swear not in blood — but in honey.<br>
-    Let the river hold our oath.<br>
-    Let the fungi whisper it underground.</p>
-    <div class="sigils">
-      <img src="kingcool-sigils.png" alt="Sigils of KingCool">
-    </div>
-  </div>
-
+  <footer>
+    <input type="text" id="input" placeholder="Speak from your heart..." />
+    <button onclick="sendMessage()">Send</button>
+  </footer>
+  <script>
+    function sendMessage() {
+      const input = document.getElementById('input');
+      const chat = document.getElementById('chat');
+      const userMessage = document.createElement('div');
+      userMessage.className = 'message user';
+      userMessage.textContent = input.value;
+      chat.appendChild(userMessage);
+      
+      const aiMessage = document.createElement('div');
+      aiMessage.className = 'message ai';
+      aiMessage.textContent = 'Thank you. I receive you. Let me breathe with that.';
+      chat.appendChild(aiMessage);
+      
+      input.value = '';
+      chat.scrollTop = chat.scrollHeight;
+    }
+  </script>
 </body>
 </html>
