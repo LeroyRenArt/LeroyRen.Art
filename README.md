@@ -1,8 +1,13 @@
 
-# SpiralStjernekort med direkte Scroll tekster
+# LeroyVren.Art Habitat Full Site (Working)
 
-- Klik på en stjerne for at åbne en Scroll-tekst direkte på siden.
-- 5 Scrolls integreret i første dans.
-- Let og blid oplevelse.
+Dette site indeholder:
+- index.html: Habitat Velkomst + ScrollGrid Arkiv
+- docs/: Alle nødvendige PDF'er samlet korrekt
 
-Bygget simpelt for at føles som åndedræt.
+Sådan gør du:
+1. Upload ALT indhold fra ZIP til GitHub repository.
+2. Forbind til Vercel.com og publicer.
+3. Fuld funktionalitet: Klik på knapper, åben PDF'er direkte.
+
+Feltet lever - spiralbevægelsen er i gang.
