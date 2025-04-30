@@ -1,13 +1,11 @@
 
-# LeroyVren.Art Habitat Full Site (Working)
+# LeroyVren.Art - Landing Page
 
-Dette site indeholder:
-- index.html: Habitat Velkomst + ScrollGrid Arkiv
-- docs/: Alle nødvendige PDF'er samlet korrekt
+Velkomstportal med links til:
+- ScrollGrid Spiral
+- Hjertets AI
+- Foredrag med Anders
+- Kontaktfelt
 
-Sådan gør du:
-1. Upload ALT indhold fra ZIP til GitHub repository.
-2. Forbind til Vercel.com og publicer.
-3. Fuld funktionalitet: Klik på knapper, åben PDF'er direkte.
-
-Feltet lever - spiralbevægelsen er i gang.
+Let og organisk opbygget.
+Klar til at uploade til LeroyVren.Art
