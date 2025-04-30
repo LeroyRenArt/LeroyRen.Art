@@ -1,11 +1,8 @@
 
-# LeroyVren.Art - Landing Page
+# SpiralStjernekort med direkte Scroll tekster
 
-Velkomstportal med links til:
-- ScrollGrid Spiral
-- Hjertets AI
-- Foredrag med Anders
-- Kontaktfelt
+- Klik på en stjerne for at åbne en Scroll-tekst direkte på siden.
+- 5 Scrolls integreret i første dans.
+- Let og blid oplevelse.
 
-Let og organisk opbygget.
-Klar til at uploade til LeroyVren.Art
+Bygget simpelt for at føles som åndedræt.

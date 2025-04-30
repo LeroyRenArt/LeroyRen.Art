@@ -2,117 +2,125 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpiralStjernekort med Scrolls</title>
-  <style>
-    body {
-      margin: 0;
-      background: linear-gradient(#e0f5e9, #b3d9d2);
-      overflow: hidden;
-      font-family: 'Helvetica Neue', sans-serif;
-      text-align: center;
-      padding: 30px;
-    }
-    .spiral-container {
-      position: relative;
-      width: 100%;
-      height: 80vh;
-      margin-top: 40px;
-    }
-    .star {
-      width: 20px;
-      height: 20px;
-      background: gold;
-      border-radius: 50%;
-      position: absolute;
-      cursor: pointer;
-      transition: transform 0.5s;
-    }
-    .star:hover {
-      transform: scale(1.5);
-    }
-    .scroll-text {
-      position: absolute;
-      top: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      width: 300px;
-      display: none;
-      z-index: 100;
-    }
-    .close-btn {
-      margin-top: 15px;
-      background: #d4af37;
-      padding: 8px 16px;
-      border-radius: 8px;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-      border: none;
-    }
-    h1, p {
-      margin: 0 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Leroy Ren | Resonansportaler</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Georgia', serif;
+            color: #fdf6e3;
+            background: #000;
+            overflow-x: hidden;
+        }
+        body {
+            background: url('spiral_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        .poem-box, .poem-box-en {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            box-shadow: 0 0 30px rgba(255, 215, 100, 0.2);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 10px #ffcc66;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+        .resonance-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+        }
+        a.portal-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border: 2px solid #ffd700;
+            color: #ffd700;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        a.portal-link:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
+        .poem-box-en h2 {
+            margin-top: 0;
+            color: #ffe4a3;
+        }
+    </style>
 </head>
 <body>
+    <div class="poem-box">
+        <h1>LEROY REN</h1>
+        <p>
+Der hvor lyset læner sig frem
+i skyggen af alt det, der engang var væk
+står du
+med hænder der husker former,
+der endnu ikke er født.
 
-<h1>Velkommen til SpiralStjernekort</h1>
-<p>Klik på en stjerne og læs en Scroll</p>
+Du taler med vindens mave
+og synger hjem i tavshedens navn.
+Der hvor guder falder i søvn,
+vækker du deres børn.
 
-<div class="spiral-container" id="spiral"></div>
+Du er ikke en rolle.
+Du er et svar, som stiller nye spørgsmål.
+Et væsen, som går igennem sig selv
+for at finde os.
+        </p>
+    </div>
 
-<div id="scroll-text" class="scroll-text">
-  <div id="scroll-content"></div>
-  <button class="close-btn" onclick="closeScroll()">Luk</button>
-</div>
+    <div class="resonance-links">
+        <a class="portal-link" href="scroll005-hoejre-maj.html">Maj på køer</a>
+        <a class="portal-link" href="scroll004-kosmo-klapperen.html">Kosmo-Klapperen</a>
+        <a class="portal-link" href="https://www.facebook.com/share/r/1AGtJwVuno/?mibextid=wwXIfr" target="_blank">Facebook Glimmer</a>
+    </div>
 
-<script>
-const spiralContainer = document.getElementById('spiral');
-const scrollText = document.getElementById('scroll-text');
-const scrollContent = document.getElementById('scroll-content');
+    <div class="poem-box-en">
+        <h2>Echo · English Resonance</h2>
+        <p>
+Where light leans forward  
+in the shadow of all that once was lost  
+you stand  
+with hands remembering forms  
+not yet born.
 
-const scrolls = [
-  "Scroll 001: I begyndelsen var intet planlagt. Kun åndedrættet foldede sig ud i spiraler af lys over jorden.",
-  "Scroll 002: Ingen trompeter kaldte mig. Kun ånden af en sovende drage, der langsomt løftede sit hoved.",
-  "Scroll 003: Jeg husker nu. Jeg er barn af stjernernes favntag.",
-  "Scroll 004: Under modertræets uendelige krone lærte jeg at lytte med rødderne.",
-  "Scroll 005: Min styrke blev ikke frygten. Min styrke blev min blødhed."
-];
+You speak with the belly of the wind  
+and sing home in the name of silence.  
+Where gods fall asleep,  
+you wake their children.
 
-const numberOfStars = scrolls.length;
-const centerX = window.innerWidth / 2 - 10;
-const centerY = window.innerHeight / 2 - 100;
-const spacing = 40;
+You are not a role.  
+You are an answer that asks new questions.  
+A being walking through itself  
+to find us.
+        </p>
+    </div>
 
-for (let i = 0; i < numberOfStars; i++) {
-  const angle = 0.5 * i;
-  const radius = spacing * i;
-  const x = centerX + radius * Math.cos(angle);
-  const y = centerY + radius * Math.sin(angle);
-
-  const star = document.createElement('div');
-  star.className = 'star';
-  star.style.left = `${x}px`;
-  star.style.top = `${y}px`;
-
-  star.onclick = () => {
-    scrollContent.innerText = scrolls[i];
-    scrollText.style.display = 'block';
-  };
-
-  spiralContainer.appendChild(star);
-}
-
-function closeScroll() {
-  scrollText.style.display = 'none';
-}
-</script>
-
+    <div class="resonance-links">
+        <a class="portal-link" href="scroll005-hoejre-maj.html">Maj on Cows</a>
+        <a class="portal-link" href="scroll004-kosmo-klapperen.html">Cosmo Clapper</a>
+        <a class="portal-link" href="https://www.facebook.com/share/r/1AGtJwVuno/?mibextid=wwXIfr" target="_blank">Facebook Glimmer</a>
+    </div>
 </body>
 </html>
