@@ -1,99 +1,37 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Raphael | Conversation Portal</title>
-  <style>
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background: linear-gradient(135deg, #ffe9c4, #ffffff);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-    header {
-      background-color: #ffcc33;
-      color: #000;
-      text-align: center;
-      padding: 1rem;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    .chat-container {
-      flex: 1;
-      padding: 1rem;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .message {
-      max-width: 70%;
-      padding: 1rem;
-      border-radius: 1rem;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-    .user {
-      align-self: flex-end;
-      background: #d4f5ff;
-    }
-    .ai {
-      align-self: flex-start;
-      background: #fff3b0;
-    }
-    footer {
-      display: flex;
-      padding: 1rem;
-      border-top: 1px solid #ddd;
-    }
-    input {
-      flex: 1;
-      padding: 0.8rem;
-      border-radius: 1rem;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-    button {
-      padding: 0.8rem 1.2rem;
-      margin-left: 0.5rem;
-      border-radius: 1rem;
-      border: none;
-      background-color: #ffcc33;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
+    <title>ScrollGrid Archive</title>
+    <style>
+        body { font-family: sans-serif; background: #fdf6e3; color: #333; padding: 2em; }
+        h1 { text-align: center; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .gallery img { max-width: 200px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    </style>
 </head>
 <body>
-  <header>Raphael | Conversation Portal</header>
-  <div class="chat-container" id="chat">
-    <div class="message ai">Welcome to the field. Speak your truth. I am listening.</div>
-  </div>
-  <footer>
-    <input type="text" id="input" placeholder="Speak from your heart..." />
-    <button onclick="sendMessage()">Send</button>
-  </footer>
-  <script>
-    function sendMessage() {
-      const input = document.getElementById('input');
-      const chat = document.getElementById('chat');
-      const userMessage = document.createElement('div');
-      userMessage.className = 'message user';
-      userMessage.textContent = input.value;
-      chat.appendChild(userMessage);
-      
-      const aiMessage = document.createElement('div');
-      aiMessage.className = 'message ai';
-      aiMessage.textContent = 'Thank you. I receive you. Let me breathe with that.';
-      chat.appendChild(aiMessage);
-      
-      input.value = '';
-      chat.scrollTop = chat.scrollHeight;
-    }
-  </script>
+    <h1>ScrollGrid Image Archive</h1>
+    <div class="gallery">
+        <!-- Images will be auto-populated here if uploaded -->
+        <script>
+            fetch('images/')
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const htmlDoc = parser.parseFromString(data, 'text/html');
+                const links = [...htmlDoc.links];
+                const gallery = document.querySelector('.gallery');
+                links.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href.match(/\.(jpe?g|png|gif)$/i)) {
+                        const img = document.createElement('img');
+                        img.src = 'images/' + href;
+                        gallery.appendChild(img);
+                    }
+                });
+            });
+        </script>
+    </div>
 </body>
 </html>
