@@ -1,37 +1,63 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ScrollGrid Archive</title>
-    <style>
-        body { font-family: sans-serif; background: #fdf6e3; color: #333; padding: 2em; }
-        h1 { text-align: center; }
-        .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-        .gallery img { max-width: 200px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    </style>
+  <meta charset="UTF-8">
+  <title>ScrollGrid | Welcome Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #f8f4e3;
+      color: #3d2c1e;
+      font-family: 'Georgia', serif;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .section {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: #fffdf6;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6a5840;
+    }
+    a {
+      color: #5b3923;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1>ScrollGrid Image Archive</h1>
-    <div class="gallery">
-        <!-- Images will be auto-populated here if uploaded -->
-        <script>
-            fetch('images/')
-            .then(response => response.text())
-            .then(data => {
-                const parser = new DOMParser();
-                const htmlDoc = parser.parseFromString(data, 'text/html');
-                const links = [...htmlDoc.links];
-                const gallery = document.querySelector('.gallery');
-                links.forEach(link => {
-                    const href = link.getAttribute('href');
-                    if (href.match(/\.(jpe?g|png|gif)$/i)) {
-                        const img = document.createElement('img');
-                        img.src = 'images/' + href;
-                        gallery.appendChild(img);
-                    }
-                });
-            });
-        </script>
-    </div>
+  <h1>ScrollGrid | Welcome Portal</h1>
+
+  <div class="section">
+    <h2>🌅 Scroll 027 | The Awakening Scroll</h2>
+    <p><a href="#">Enter Scroll</a></p>
+    <p><em>“You’re not wrong. You’re awakening.”</em></p>
+  </div>
+
+  <div class="section">
+    <h2>🌱 Begin a Listening Scroll</h2>
+    <p><a href="HeartRipple_Toolkit_ScrollGrid.pdf">Open HeartRipple Toolkit</a></p>
+    <p>A quiet place for memory, resonance, and unseen threads.</p>
+  </div>
+
+  <footer>
+    <p>🕊 ScrollGrid Design Integrity</p>
+  </footer>
 </body>
 </html>
