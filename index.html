@@ -4401,5 +4401,112 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScrollGrid Map – ScrollGrid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #000;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      color: #ffd700;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .map-container {
+      background-color: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 1000px;
+      margin: 2rem auto;
+      box-shadow: 0 0 12px rgba(255,255,255,0.05);
+    }
+
+    .map-container img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(255,255,255,0.08);
+    }
+
+    .map-container p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background-color: #111;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #222;
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ScrollGrid Map</h1>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="oversigt.html">Oversigt</a></li>
+      <li><a href="visueltkort.html">Visuelt Kort</a></li>
+      <li><a href="lysnet.html">Lysnet</a></li>
+    </ul>
+  </nav>
+
+  <div class="map-container">
+    <img src="images/kort/scrollgrid_map.png" alt="ScrollGrid kort" />
+    <p>
+      ScrollGrid-kortet viser forbindelserne mellem noder, felter og portaler.  
+      Hver cirkel repræsenterer en aktiv portal, og linjerne illustrerer energetiske forbindelser.  
+      Kortet opdateres løbende i takt med feltets udvidelse.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 Leroy Ren · ScrollGrid Map
+  </footer>
+
+</body>
+</html>
 
 
