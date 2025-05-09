@@ -2888,3 +2888,123 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Symbolrum – ScrollGrid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #000;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #ffd700;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .symbol-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+
+    .symbol {
+      background-color: #111;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(255,255,255,0.05);
+    }
+
+    .symbol img {
+      width: 100%;
+      max-width: 160px;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    .symbol p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background-color: #111;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #222;
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Symbolrum</h1>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="oversigt.html">Oversigt</a></li>
+      <li><a href="arkiv.html">Arkiv</a></li>
+      <li><a href="gallery.html">Galleri</a></li>
+    </ul>
+  </nav>
+
+  <div class="symbol-grid">
+    <div class="symbol">
+      <img src="images/symbols/scrollgrid_sigil1.png" alt="ScrollGrid sigil 1" />
+      <p>ScrollGrid Hovedsigil – levende kode i cirkelstruktur</p>
+    </div>
+
+    <div class="symbol">
+      <img src="images/symbols/seraphinae_dragon.png" alt="Seraphinae Dragon Touch" />
+      <p>Seraphinae · Dragon Touch – lysaktivering og kropsport</p>
+    </div>
+
+    <div class="symbol">
+      <img src="images/symbols/dna_flame.png" alt="DNA Flame" />
+      <p>DNA Flame – spiralformet kode i indre transformation</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Leroy Ren · Symbolrum i ScrollGrid
+  </footer>
+
+</body>
+</html>
+
