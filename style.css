@@ -61,3 +61,12 @@ footer {
   font-size: 0.9rem;
   color: #a59494;
 }
+
+.hero-image {
+  max-width: 100%;
+  width: 500px;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
