@@ -3396,3 +3396,123 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Billedrum – ScrollGrid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #000;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      color: #ffd700;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    .image {
+      background-color: #111;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+
+    .image img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .image p {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background-color: #111;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #222;
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Billedrum</h1>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="oversigt.html">Oversigt</a></li>
+      <li><a href="gallery.html">Galleri</a></li>
+      <li><a href="symbolrum.html">Symbolrum</a></li>
+    </ul>
+  </nav>
+
+  <div class="gallery">
+    <div class="image">
+      <img src="images/forsider/SeraphinaeRising_DragonTouch_TheBookThatBecameMyBody.png" alt="Forside Seraphinae Rising" />
+      <p>Forside: Seraphinae Rising – The Book That Became My Body</p>
+    </div>
+
+    <div class="image">
+      <img src="images/plakater/fugleplakat.png" alt="Fugleplakat" />
+      <p>Scroll S072 – Fugleplakat & lydfeltforankring</p>
+    </div>
+
+    <div class="image">
+      <img src="images/plakater/dyrekald_saerstemmer.png" alt="Dyrekald plakat" />
+      <p>Scroll S054 – Dyrekald & Særstemmer</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Leroy Ren · Visuelt Billedrum i ScrollGrid
+  </footer>
+
+</body>
+</html>
+
+
