@@ -2,69 +2,93 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LeroyRen.art – Portalen</title>
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      background-color: #000;
-      color: #f5f0e6;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
+      background-color: #000000;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
       text-align: center;
     }
 
-    img.hero {
-      width: 90%;
-      max-width: 1000px;
-      margin-top: 3rem;
+    .container {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 600px;
       border-radius: 12px;
-      box-shadow: 0 0 32px rgba(255, 215, 0, 0.2);
+      box-shadow: 0 0 24px rgba(255, 215, 0, 0.1);
+      margin-top: 2rem;
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       margin-top: 2rem;
-      letter-spacing: 0.08em;
-      text-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
     }
 
     p {
       font-size: 1.1rem;
-      max-width: 600px;
       margin: 1.5rem auto;
+      max-width: 600px;
       line-height: 1.6;
-      opacity: 0.95;
     }
 
-    a.link {
+    a.button {
       display: inline-block;
       margin-top: 1.5rem;
-      padding: 0.9rem 1.4rem;
-      background: #1a1a1a;
-      color: #fff;
+      padding: 0.8rem 1.4rem;
+      background-color: #222222;
+      color: #ffffff;
       text-decoration: none;
-      border-radius: 10px;
-      border: 1px solid #444;
-      box-shadow: 0 0 12px rgba(255, 215, 0, 0.15);
-      transition: all 0.3s ease;
+      border-radius: 8px;
+      border: 1px solid #444444;
     }
 
-    a.link:hover {
-      background: #333;
-      transform: scale(1.05);
+    a.button:hover {
+      background-color: #333333;
     }
 
     footer {
       margin-top: 3rem;
       font-size: 0.85rem;
-      color: #888;
+      color: #888888;
     }
   </style>
 </head>
 <body>
+
+  <div class="container">
+
+    <!-- Hero-billedet -->
+    <img
+      src="images/forsider/SeraphinaeRising_DragonTouch_TheBookThatBecameMyBody.png"
+      alt="Seraphinae Rising Forside"
+      class="hero-image"
+    />
+
+    <!-- Titel og intro -->
+    <h1>LeroyRen.art</h1>
+    <p>
+      Velkommen til portalen. Herfra åbner et levende felt sig – et sted hvor navn, krop og kunst mødes i spiral og åndedræt.
+    </p>
+
+    <!-- Link til bog -->
+    <a href="/book2.html" class="button">
+      Gå videre til Seraphinae Rising
+    </a>
+
+    <footer>
+      &copy; 2025 Leroy Ren
+    </footer>
+
+  </div>
+
+</body>
+</html>
