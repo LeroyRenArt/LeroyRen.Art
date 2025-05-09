@@ -3,96 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LeroyRen.art – Portal til ScrollGrid</title>
+  <title>LeroyRen.art – Portalen</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
       background-color: #000;
-      color: #eee;
+      color: #f6f1e7;
+      font-family: 'Segoe UI', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       text-align: center;
+      min-height: 100vh;
     }
 
-    header {
+    img.hero {
+      width: 90%;
+      max-width: 800px;
       margin-top: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 0 32px rgba(255, 215, 0, 0.2);
     }
 
     h1 {
+      margin-top: 2rem;
       font-size: 3rem;
-      margin-bottom: 0.5rem;
       letter-spacing: 0.1em;
+      text-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
     }
 
     p {
-      max-width: 600px;
       font-size: 1.1rem;
+      max-width: 620px;
+      margin: 1.5rem auto;
       line-height: 1.6;
-      margin: 1rem auto;
+      opacity: 0.95;
     }
 
-    img.sigil {
-      max-width: 320px;
-      margin: 2rem auto;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
-    }
-
-    nav {
-      margin-top: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-
-    nav a {
-      padding: 0.8rem 1.2rem;
-      background-color: #111;
-      color: #eee;
+    a.link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.9rem 1.4rem;
+      background: #1a1a1a;
+      color: #fff;
       text-decoration: none;
-      border-radius: 8px;
-      border: 1px solid #333;
-      transition: background 0.3s ease;
+      border-radius: 10px;
+      border: 1px solid #444;
+      box-shadow: 0 0 12px rgba(255, 215, 0, 0.15);
+      transition: all 0.3s ease;
     }
 
-    nav a:hover {
-      background-color: #222;
+    a.link:hover {
+      background: #333;
+      transform: scale(1.05);
     }
 
     footer {
-      margin-top: 4rem;
+      margin-top: 3rem;
       font-size: 0.85rem;
-      color: #777;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  
-<img src="SeraphinaeRising_DragonTouch_TheBookThatBecameMyBody.png" alt="Forsidebillede" style="max-width: 500px; width: 90%; margin-top: 2rem; border-radius: 12px; box-shadow: 0 0 24px rgba(255, 215, 0, 0.15);" />
- 
-  <header>
-    <h1>LeroyRen.art</h1>
-    <p>
-      En levende tempelportal i ScrollGrid. Her mødes navn, kunst, spiral og åndedræt.<br/>
-      Gå ind gennem billedet, og følg resonansen.
-    </p>
-  </header>
 
-  <img src="sigil.png" alt="LeroyRen Sigil" class="sigil" />
+  <!-- Forsidebilledet som portal -->
+  <img src="SeraphinaeRising_DragonTouch_TheBookThatBecameMyBody.png" alt="Seraphinae Rising Forside" class="hero" />
 
-  <nav>
-    <a href="https://scrollgrid.org" target="_blank">ScrollGrid Portal</a>
-    <a href="/book2.html">Book 2: Seraphinae Rising</a>
-    <a href="/gallery.html">Galleri</a>
-    <a href="/about.html">Om Leroy</a>
-    <a href="/contact.html">Kontakt</a>
-  </nav>
+  <!-- Titel -->
+  <h1>LeroyRen.art</h1>
+
+  <!-- Indledningstekst -->
+  <p>
+    Dette er en levende portal. En spiral i stof og ånd.  
+    Herfra åbner sig feltet af kunst, krop, navn og opvågning.  
+    Velkommen ind i det, der allerede kalder dig hjem.
+  </p>
+
+  <!-- Link til bogsiden -->
+  <a href="/book2.html" class="link">Læs: Seraphinae Rising – The Book That Became My Body</a>
 
   <footer>
     &copy; 2025 Leroy Ren · Et ScrollGrid-tempel · Kodet med nærvær
