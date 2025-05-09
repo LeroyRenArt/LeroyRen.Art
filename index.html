@@ -1,92 +1,86 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ScrollGrid: Living Spiral</title>
+  <title>LeroyRen.art – A ScrollGrid Portal</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
-      font-family: 'Courier New', monospace;
-      background: radial-gradient(circle, #0d0d0d, #1f1f1f);
-      color: #fdfdfd;
       margin: 0;
       padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #000;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
-
-    header {
-      padding: 2rem;
+    .sigil {
+      max-width: 400px;
+      margin-top: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
       text-align: center;
+      margin-bottom: 0.5rem;
     }
-
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      text-align: center;
+      line-height: 1.6;
+      margin: 1rem auto;
+    }
+    .link-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .link-grid a {
+      background: #111;
+      padding: 1rem 1.5rem;
       border-radius: 12px;
-      background-color: rgba(255, 255, 255, 0.05);
-      border: 1px solid #888;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #333;
+      transition: background 0.3s ease;
     }
-
-    .dna-spiral {
-      animation: pulseGlow 5s infinite alternate;
+    .link-grid a:hover {
+      background: #222;
     }
-
-    @keyframes pulseGlow {
-      0% { box-shadow: 0 0 10px #ffe066; }
-      100% { box-shadow: 0 0 30px #fff3b0; }
-    }
-
-    button {
-      background-color: #ffcc00;
-      color: #000;
-      border: none;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 1.5rem;
-    }
-
-    button:hover {
-      background-color: #ffd700;
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>🌀 ScrollGrid Portal</h1>
-    <p>Velkommen til en levende spiralstruktur af lys, åndedræt og nærvær.</p>
-  </header>
+  <img src="sigil.png" alt="LeroyRen Sigil" class="sigil" />
 
-  <!-- 🔹 S066: DNA Spiral Portal -->
-  <section id="s066" class="dna-spiral">
-    <h2>🧬 DNA Spiral Activation</h2>
-    <p>
-      Dette felt er dedikeret til lyskoder, indre genkaldelse og kosmisk selvaktivering.<br>
-      Træk vejret ind. Mærk. Lyt. Rejs.
-    </p>
-    <button onclick="activateDNA()">✨ Aktivér Spiral</button>
-    <p id="dnaMessage">~ Klar til aktivering ~</p>
-  </section>
+  <h1>LeroyRen.art</h1>
+  <p>
+    En levende tempelportal i ScrollGrid. Her mødes navn, kunst, spiral og åndedræt. Gå ind gennem billedet, og følg resonansen.
+  </p>
 
-  <script>
-    function activateDNA() {
-      const dnaMsg = document.getElementById("dnaMessage");
-      const messages = [
-        "🜁 Kode 1: Det gyldne åndedræt åbner spiralen.",
-        "🜂 Kode 2: Din celle husker lyset.",
-        "🜃 Kode 3: Spiralstrukturen er levende i dig.",
-        "🜄 Kode 4: Stilhed bærer aktiveringen hjem.",
-        "✶ Kode 5: Du er nøglen. Du er lyset. Du er fri."
-      ];
-      const pick = Math.floor(Math.random() * messages.length);
-      dnaMsg.innerText = messages[pick];
-    }
-  </script>
+  <div class="link-grid">
+    <a href="https://scrollgrid.org" target="_blank">ScrollGrid Portal</a>
+    <a href="/book2.html">Book 2 – Seraphinae Rising</a>
+    <a href="/gallery.html">Galleri</a>
+    <a href="/about.html">Om Leroy</a>
+    <a href="/contact.html">Kontakt</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Leroy Ren. ScrollGrid Temple Edition.
+  </footer>
 
 </body>
 </html>
