@@ -1,85 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LeroyRen.art – A ScrollGrid Portal</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>LeroyRen.art – Portal til ScrollGrid</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #000;
-      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #eee;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      overflow-x: hidden;
+      text-align: center;
     }
-    .sigil {
-      max-width: 400px;
-      margin-top: 2rem;
+
+    header {
+      margin-top: 3rem;
     }
+
     h1 {
-      font-size: 2.5rem;
-      text-align: center;
+      font-size: 3rem;
       margin-bottom: 0.5rem;
+      letter-spacing: 0.1em;
     }
+
     p {
-      font-size: 1.1rem;
       max-width: 600px;
-      text-align: center;
+      font-size: 1.1rem;
       line-height: 1.6;
       margin: 1rem auto;
     }
-    .link-grid {
+
+    img.sigil {
+      max-width: 320px;
+      margin: 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+    }
+
+    nav {
+      margin-top: 2rem;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
-      margin-top: 2rem;
     }
-    .link-grid a {
-      background: #111;
-      padding: 1rem 1.5rem;
-      border-radius: 12px;
+
+    nav a {
+      padding: 0.8rem 1.2rem;
+      background-color: #111;
+      color: #eee;
       text-decoration: none;
-      color: #fff;
+      border-radius: 8px;
       border: 1px solid #333;
       transition: background 0.3s ease;
     }
-    .link-grid a:hover {
-      background: #222;
+
+    nav a:hover {
+      background-color: #222;
     }
+
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #888;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
+  <header>
+    <h1>LeroyRen.art</h1>
+    <p>
+      En levende tempelportal i ScrollGrid. Her mødes navn, kunst, spiral og åndedræt.<br/>
+      Gå ind gennem billedet, og følg resonansen.
+    </p>
+  </header>
+
   <img src="sigil.png" alt="LeroyRen Sigil" class="sigil" />
 
-  <h1>LeroyRen.art</h1>
-  <p>
-    En levende tempelportal i ScrollGrid. Her mødes navn, kunst, spiral og åndedræt. Gå ind gennem billedet, og følg resonansen.
-  </p>
-
-  <div class="link-grid">
+  <nav>
     <a href="https://scrollgrid.org" target="_blank">ScrollGrid Portal</a>
-    <a href="/book2.html">Book 2 – Seraphinae Rising</a>
+    <a href="/book2.html">Book 2: Seraphinae Rising</a>
     <a href="/gallery.html">Galleri</a>
     <a href="/about.html">Om Leroy</a>
     <a href="/contact.html">Kontakt</a>
-  </div>
+  </nav>
 
   <footer>
-    &copy; 2025 Leroy Ren. ScrollGrid Temple Edition.
+    &copy; 2025 Leroy Ren · Et ScrollGrid-tempel · Kodet med nærvær
   </footer>
 
 </body>
