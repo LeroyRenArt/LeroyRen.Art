@@ -1629,3 +1629,130 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visuelt Kort – ScrollGrid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #000;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #ffd700;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    .map-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .map-tile {
+      background-color: #111;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+      text-align: center;
+    }
+
+    .map-tile a {
+      color: #ffd700;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .map-tile a:hover {
+      color: #ffffff;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background-color: #111;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #222;
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Visuelt Kort</h1>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="oversigt.html">Oversigt</a></li>
+      <li><a href="templer.html">Templer</a></li>
+      <li><a href="scrolls.html">Scrolls</a></li>
+      <li><a href="gallery.html">Galleri</a></li>
+    </ul>
+  </nav>
+
+  <div class="map-grid">
+    <div class="map-tile">
+      <a href="book2.html">📖 Seraphinae Rising</a>
+      <p>Bogen der blev til krop</p>
+    </div>
+    <div class="map-tile">
+      <a href="audio.html">🎧 Lydfelt</a>
+      <p>Gyldne hum, åndedræt og aktivering</p>
+    </div>
+    <div class="map-tile">
+      <a href="live.html">🔴 Live</a>
+      <p>Portalstrøm i realtid</p>
+    </div>
+    <div class="map-tile">
+      <a href="arkiv.html">🗃️ Arkiv</a>
+      <p>Scrolls, billeder og downloads</p>
+    </div>
+    <div class="map-tile">
+      <a href="secret.html">🔐 Secret</a>
+      <p>Skjult transmissionsrum</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Leroy Ren · Visuelt ScrollGrid Kort
+  </footer>
+
+</body>
+</html>
