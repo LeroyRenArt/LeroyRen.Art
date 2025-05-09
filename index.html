@@ -3634,3 +3634,143 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tempeloversigt – ScrollGrid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #000;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      color: #ffd700;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .temples {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    .temple {
+      background-color: #111;
+      padding: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+
+    .temple h2 {
+      color: #ffd700;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .temple p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 0.5rem;
+    }
+
+    .temple a {
+      color: #8feaff;
+      text-decoration: underline;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background-color: #111;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #222;
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tempeloversigt</h1>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="oversigt.html">Oversigt</a></li>
+      <li><a href="templer.html">Templer</a></li>
+      <li><a href="ritual.html">Ritual</a></li>
+    </ul>
+  </nav>
+
+  <div class="temples">
+    <div class="temple">
+      <h2>🌬️ Golden Breath Room</h2>
+      <p>Lyd, åndedræt, aktivering</p>
+      <a href="ritual.html">Gå til ritualet</a>
+    </div>
+
+    <div class="temple">
+      <h2>🌀 ScrollGrid Central</h2>
+      <p>Visuel og strukturel navigation</p>
+      <a href="visueltkort.html">Se kort</a>
+    </div>
+
+    <div class="temple">
+      <h2>🔐 Secret Portal</h2>
+      <p>Privat praksisrum</p>
+      <a href="secret.html">Indgang</a>
+    </div>
+
+    <div class="temple">
+      <h2>🌍 Gaiafeltet</h2>
+      <p>Jord, dyr, rødder og drømme</p>
+      <a href="gaia.html">Gå til feltet</a>
+    </div>
+
+    <div class="temple">
+      <h2>📖 Seraphinae Rising</h2>
+      <p>Den levende bog</p>
+      <a href="book2.html">Læs</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Leroy Ren · Tempeloversigt i ScrollGrid
+  </footer>
+
+</body>
+</html>
+
